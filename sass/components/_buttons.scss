@@ -1,0 +1,97 @@
+
+                /*button expoer*/
+
+.explorer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 45px;
+    font-family: roboto;
+    
+     h1{
+     font-size: 30px;
+     font-weight: bold;
+     color: #000000;
+ } 
+  p{
+     font-size: medium;
+     color: #808080;
+     font-weight: bold;
+ }
+ 
+  button{
+     background-image:linear-gradient(#FF79DA,#9356DC);
+     color: #f2f2f2;
+     font-weight: bold;
+     padding: 15px;
+     font-size: medium;
+     border: none;
+     border-radius: 30px;
+     box-shadow: 0 0 16px #0000002e;
+ }
+} 
+
+input {
+    border: none;
+    background-color: #d3d3d3;
+}
+
+.localisation input::placeholder {
+    color: #000000;
+}
+                /*fonctionnement*/
+
+.fonctionnement {
+  @include screen-md {
+      display: flex;
+  }
+    counter-reset: list;
+    margin-left: 10px;
+    padding-bottom: 60px;
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex-grow: 1;
+        width: 350px;
+    }
+
+    & li {
+        &::before {
+            content: counter(list);
+            counter-increment: list;
+            background-color: #9356DC;
+            color: #d3d3d3;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            left: -20px;
+        }
+       
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        padding: 15px;
+        box-shadow: 0 0 10px #0000002e;
+        list-style-type: none;
+        position: relative;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    & li:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+
+    & i.fas {
+        margin-right: 30px;
+        padding: 10px;
+        color: #808080;
+    }
+
+}
