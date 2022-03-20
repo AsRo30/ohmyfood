@@ -1,7 +1,7 @@
 
 footer{
     
-       color: #ffffff;
+      color: $c-w;
        background-color: black;
  h2{
      font-size: medium;
@@ -16,11 +16,9 @@ footer{
  li{
      padding: 5px;
      font-family: roboto;
- .i{ padding: 10px;
-    
-}
  }
- 
-
+ i.fas{
+     padding: 10px;
+ }
 }
 

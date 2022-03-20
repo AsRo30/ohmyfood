@@ -1,10 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Roboto:wght@100&family=Shrikhand&display=swap");
-body {
-  margin: 0;
-  font-family: roboto;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Shrikhand&display=swap");
 header {
   text-align: center;
   box-shadow: 0 2px 2px 1px #808080;
@@ -12,7 +7,7 @@ header {
 }
 
 footer {
-  color: #ffffff;
+  color: #f2f2f2;
   background-color: black;
 }
 footer h2 {
@@ -29,7 +24,7 @@ footer li {
   padding: 5px;
   font-family: roboto;
 }
-footer li .i {
+footer i.fas {
   padding: 10px;
 }
 
@@ -71,6 +66,7 @@ h1 {
   font-size: large;
   font-weight: bold;
   margin: 0.67em 0;
+  font-family: "roboto", sans-serif;
 }
 
 /* Grouping content
@@ -373,7 +369,25 @@ template {
   display: none;
 }
 
-/*button expoer*/
+/*localisation*/
+.localisation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #d3d3d3;
+}
+
+input {
+  border: none;
+  background-color: #d3d3d3;
+}
+
+.localisation input::placeholder {
+  color: #000000;
+}
+
+/*button explorer*/
 .explorer {
   text-align: center;
   background-color: #f2f2f2;
@@ -413,13 +427,12 @@ input {
 /*fonctionnement*/
 .fonctionnement {
   counter-reset: list;
-  margin-left: 10px;
+  margin-left: 20px;
   padding-bottom: 60px;
 }
-@media (min-width: 768px) {
-  .fonctionnement {
-    display: flex;
-  }
+.fonctionnement h2 {
+  font-weight: bold;
+  margin-left: 30px;
 }
 .fonctionnement ol {
   display: flex;
@@ -427,6 +440,13 @@ input {
   gap: 20px;
   flex-grow: 1;
   width: 350px;
+}
+@media (min-width: 768px) {
+  .fonctionnement ol {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 }
 .fonctionnement li {
   background-color: #f6f6f6;
@@ -437,6 +457,7 @@ input {
   position: relative;
   color: #000000;
   font-weight: bold;
+  width: 350px;
 }
 .fonctionnement li::before {
   content: counter(list);
@@ -463,55 +484,37 @@ input {
   color: #808080;
 }
 
-/*essai*/
-/*logo*/
-#logo {
-  height: 30px;
-  padding: 20px;
-  font-family: shrikhand;
-}
-
-.localisation {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background-color: #d3d3d3;
-}
-
-/*localisation*/
-.localisation {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background-color: #d3d3d3;
-}
-
-input {
-  border: none;
-  background-color: #d3d3d3;
-}
-
-.localisation input::placeholder {
-  color: #000000;
-}
-
-/*section*/
-.fonctionnement h2 {
-  font-weight: bold;
-  margin: 30px;
-}
-
 /*cards*/
-.restaurants {
+.restaurants_list {
   background-color: #d3d3d3;
   padding: 20px;
+}
+.restaurants_list h2 {
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.restaurants {
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+  }
 }
 
 .card {
   background-color: #f2f2f2;
   border-radius: 20px;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 45%;
+  }
 }
 .card img {
   width: 100%;
@@ -519,22 +522,12 @@ input {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.card p,
-.card h3 {
-  font-size: small;
-}
-.card h3 {
-  margin-left: 10px;
-  margin-bottom: 5px;
-}
 .card p {
   padding: 10px;
   margin-bottom: 10px;
   padding-top: 0;
   margin-top: 0;
-}
-.card h2 {
-  font-weight: bold;
+  font-size: small;
 }
 .card .far {
   font-size: 20px;
@@ -559,10 +552,17 @@ input {
   opacity: 1;
   transform: scale(1.2);
 }
-.card .description {
+
+.description {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
+}
+.description h3 {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: small;
 }
 
 .card span {
@@ -574,6 +574,13 @@ input {
   margin-top: 20px;
   font-weight: bold;
   border-radius: 5px;
+}
+
+/*logo*/
+#logo {
+  height: 30px;
+  padding: 20px;
+  font-family: shrikhand;
 }
 
 /*# sourceMappingURL=style.css.map */
