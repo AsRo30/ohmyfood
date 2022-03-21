@@ -16,7 +16,6 @@
         margin-left: 60px;
     }
     margin-left: 20px;   
-   
 }
 
 
@@ -24,6 +23,7 @@
     @include screen-md {
        flex-basis: 45%;
     }
+    position: relative;
     background-color: $c-w;
     border-radius: 20px; 
     background-size: cover;
@@ -83,8 +83,8 @@ display: flex;
     color: forestgreen;
     background-color: #99E2D0;
     position: absolute;
-    margin-left: 400px;
-    margin-top: 20px;
+    top:0;
+    right: 0;
     font-weight: bold;
     border-radius: 5px;
 }
