@@ -1,24 +1,36 @@
-
-footer{
+footer {
     
-      color: $c-w;
-       background-color: black;
- h2{
-     font-size: medium;
-     font-family: shrikhand;
-     padding: 10px;
-     padding-left: 40px;
-     font-weight: 100;
- }
- ul{
-     list-style-type: none;
- }
- li{
-     padding: 5px;
-     font-family: roboto;
- }
- i.fas{
-     padding: 10px;
- }
-}
+    color: $c-w;
+    background-color: $bl;
 
+    h2 {
+        @include screen-md {
+        text-align: center;
+        padding-left: 0;
+    }
+        font-size: large;
+        font-family: shrikhand;
+        padding: 10px;
+        padding-left: 40px;
+        font-weight: 100;
+    }
+
+    ul {
+        @include screen-md {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+        list-style-type: none;
+    }
+
+    li {
+        padding-right: 10px;
+        font-family: roboto;
+    }
+
+    i.fas {
+        padding: 10px;
+    }
+}

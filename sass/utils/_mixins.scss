@@ -42,5 +42,60 @@ $c-w:#f2f2f2;
   }
 }
 
+//colors dark
+$bl:#353535;
 
+//colors
+@mixin screen-bl {
+  @media (black-light:#353535) {
+    @content; 
+  }  
+}
 
+//card-menu
+
+  @mixin card-menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 15px; 
+
+    h2{
+      font-size: large;
+      margin: 0;
+      padding-left: 10px;
+    }
+  }
+
+  //button
+
+  @mixin button-explorer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 45px;
+    font-family: roboto;
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    p {
+        font-size: medium;
+        color: #808080;
+        font-weight: bold;
+    }
+
+    button {
+        background-image: linear-gradient(#FF79DA, #9356DC);
+        color: #f2f2f2;
+        font-weight: bold;
+        padding: 15px;
+        font-size: medium;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 16px #0000002e;
+    }
+}
+  
