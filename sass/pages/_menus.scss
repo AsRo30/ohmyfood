@@ -1,68 +1,152 @@
 
-.header_image{
-    img{
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    display: block;
-}
-}
-.entete{
-    
+
+.menu-entete {
+    @include heart;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 20px;
-    
-    i{
+    padding-right: 39px;
+
+    h1 {
+        padding-right: 169px;
+        font-size: 30px;
+    }
+
+    i {
         padding: 40px;
+    }
+    .fas {
+        padding-top: 20px;
     }
 }
 
 /*cards menu*/
 
-.menu{
-    background-color: green;
-    border-radius: 20px 20px 0 0;
+.menu {
+    @include screen-md {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+   
+    background-color: whitesmoke;
+    border-radius: 40px 40px 0 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;   
+    position: relative;
+    margin-top: -30px;
+
+    h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 10px;
+
+        &::after {
+            content: "";
+            top: 25px;
+            left: 10px;
+            height: 3px;
+            width: 40px;
+            background-color: #99e2d0;
+            position: absolute;
+        }
+    }
 }
 
-.entrées {
-   @include card-menu;
+.menu-list_entrees {
+    @include card-menu;
+    padding-bottom: 40px;
+
+    h2 {
+        text-decoration-color: #99e2d0;
+    }
 }
 
-.plats{
+.menu-list_plats {
     @include card-menu;
- }
+    padding-bottom: 40px;
+}
 
- .desserts{
+.menu-list_desserts {
     @include card-menu;
- }
+}
 
-.card_menu{
-    border: 1px solid red;
+.menu-list_card {
+    @include screen-md {
+        width: 550px;
+    }
+
+    display: flex;
+    align-items:self-end;
+    background-color: $c-w;
     margin-right: 20px;
     border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
-h3{
-    margin-bottom: 0;
-    padding-left: 10px;
-}
+    font-family:"roboto";
+    overflow: hidden;
+
+    p {
+        margin-left: auto;
+        font-weight: bold;
+        padding-right: 50px;
+    }
+
+    &:hover .menu-item__check {
+        margin-right: 0;
+        padding: 35px;
+    }
 }
 
-.card_description{
+.menu-list-card_description {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-p{
-    margin-top: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    h3 {
+        margin-bottom: 0;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    h4 {
+        font-weight: normal;
+        margin-top: 0;
+        padding-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
 
-.button{
+.menu-item_button {
     @include button-explorer;
+    text-align: center;
+    padding: 30px;
+    font-family: "roboto";
+}
+
+.menu-list {
+    @include screen-lg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.menu-list-item_entrees{
+    @include menu-item_title;
+}
+
+.menu-list-item_plats{
+    @include menu-item_title;
+    animation-delay: 2s;
+}
+.menu-list-item_desserts{
+    @include menu-item_title;
+    animation-delay: 5s;
 }

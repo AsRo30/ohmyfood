@@ -22,6 +22,21 @@ input {
 
 .explorer{
     @include button-explorer;
+    text-align: center;
+    padding: 45px;
+    font-family: "roboto";
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    p {
+        font-size: medium;
+        color: #808080;
+        font-weight: bold;
+    }
 }
 
 
@@ -39,6 +54,10 @@ input {
 
 
 .fonctionnement {
+    @include screen-md{
+        margin-right: 20px;
+        width: 100%;
+}
     
     h2 {
         font-weight: bold;
@@ -53,7 +72,13 @@ input {
     gap: 20px;
     flex-grow: 1;
     width: 350px;
-
+ol{
+    @include screen-md{
+        display: flex;
+        gap: 35px;
+        padding-left: 20px;
+}
+}
     & li {
         &::before {
             content: counter(list);

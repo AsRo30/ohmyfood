@@ -67,35 +67,64 @@ $bl:#353535;
     }
   }
 
+//menu-item_title
+@mixin menu-item_title{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: appear 3s;
+}
+
   //button
 
   @mixin button-explorer {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 45px;
-    font-family: roboto;
-
-    h1 {
-        font-size: 30px;
-        font-weight: bold;
-        color: #000000;
-    }
-
-    p {
-        font-size: medium;
-        color: #808080;
-        font-weight: bold;
-    }
-
+    
     button {
         background-image: linear-gradient(#FF79DA, #9356DC);
         color: #f2f2f2;
         font-weight: bold;
-        padding: 15px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         font-size: medium;
         border: none;
         border-radius: 30px;
         box-shadow: 0 0 16px #0000002e;
+        cursor: pointer;
+
+      &:hover{
+        transform: scale(1.02);
+        opacity:0.9;
+      }
     }
 }
   
+
+//heart animation
+
+@mixin heart {
+  .far {
+    font-size: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.fas {
+    font-size: 22px;
+    right: 18px;
+    padding-top: 18px;
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+&:hover .fas {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.2);
+      }
+}

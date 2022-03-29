@@ -2,6 +2,8 @@ footer {
     
     color: $c-w;
     background-color: $bl;
+    padding-bottom: 10px;
+    padding-top: 10px;
 
     h2 {
         @include screen-md {
@@ -26,11 +28,16 @@ footer {
     }
 
     li {
-        padding-right: 10px;
         font-family: roboto;
+        padding: 5px;
     }
 
     i.fas {
-        padding: 10px;
+        padding-right: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $c-w;
     }
 }
