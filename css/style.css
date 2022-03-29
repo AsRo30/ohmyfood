@@ -700,6 +700,7 @@ input {
   flex-direction: column;
   position: relative;
   margin-top: -30px;
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) {
   .menu {
@@ -790,9 +791,6 @@ input {
 }
 
 .menu-list-card_description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -802,6 +800,9 @@ input {
   padding-bottom: 5px;
   padding-left: 10px;
   font-size: large;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-list-card_description h4 {
   font-weight: normal;

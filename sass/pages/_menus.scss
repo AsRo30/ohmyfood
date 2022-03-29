@@ -35,6 +35,7 @@
     flex-direction: column;
     position: relative;
     margin-top: -30px;
+    padding-bottom: 30px;
 
     h2 {
         font-weight: 400;
@@ -99,9 +100,8 @@
 }
 
 .menu-list-card_description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    
+    
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -111,6 +111,9 @@
         padding-bottom: 5px;
         padding-left: 10px;
         font-size: large;
+        overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     }
 
     h4 {
@@ -150,3 +153,4 @@
     @include menu-item_title;
     animation-delay: 5s;
 }
+
