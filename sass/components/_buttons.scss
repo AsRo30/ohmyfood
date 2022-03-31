@@ -20,7 +20,7 @@ input {
 
 /*button explorer*/
 
-.explorer{
+.explorer {
     @include button-explorer;
     text-align: center;
     padding: 45px;
@@ -35,10 +35,8 @@ input {
     p {
         font-size: medium;
         color: #808080;
-        font-weight: bold;
-    }
+        font-weight: bold; }
 }
-
 
 input {
     border: none;
@@ -67,6 +65,7 @@ input {
     counter-reset: list;
     margin-left: 20px;
     padding-bottom: 60px;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -115,8 +114,8 @@ ol{
     }
 
     i.fas {
+
         margin-right: 30px;
         padding: 10px;
-        color: #808080;
-    }
+        color: #808080;}
 }

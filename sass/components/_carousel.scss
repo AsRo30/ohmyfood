@@ -34,7 +34,7 @@
      }
 
 
-     .restaurant-item-list_card {
+     .restaurant-item-list__card {
          @include screen-md {
              flex-basis: 45%;
              width: 350px;
@@ -43,6 +43,7 @@
          background-color: $c-w;
          border-radius: 20px;
          background-size: cover;
+         cursor: pointer;
 
          img {
              width: 100%;
@@ -79,9 +80,9 @@
          
      }
 
-     .restaurant-item-list_card span {
+     .restaurant-item-list__card span {
          padding: 10px;
-         color: forestgreen;
+         color: #22b822;
          background-color: #99E2D0;
          position: absolute;
          margin-top: 10px;

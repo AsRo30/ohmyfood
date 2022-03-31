@@ -578,25 +578,26 @@ input {
   color: #000000;
 }
 
-.restaurant-item-list_card {
+.restaurant-item-list__card {
   position: relative;
   background-color: #f2f2f2;
   border-radius: 20px;
   background-size: cover;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
-  .restaurant-item-list_card {
+  .restaurant-item-list__card {
     flex-basis: 45%;
     width: 350px;
   }
 }
-.restaurant-item-list_card img {
+.restaurant-item-list__card img {
   width: 100%;
   height: 150px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.restaurant-item-list_card p {
+.restaurant-item-list__card p {
   padding: 10px;
   margin-bottom: 10px;
   padding-top: 0;
@@ -640,9 +641,9 @@ input {
   font-size: medium;
 }
 
-.restaurant-item-list_card span {
+.restaurant-item-list__card span {
   padding: 10px;
-  color: forestgreen;
+  color: #22b822;
   background-color: #99E2D0;
   position: absolute;
   margin-top: 10px;
@@ -682,8 +683,7 @@ input {
   transform: scale(1.2);
 }
 .menu-entete h1 {
-  padding-right: 169px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .menu-entete i {
   padding: 40px;
@@ -724,48 +724,48 @@ input {
   position: absolute;
 }
 
-.menu-list_entrees {
+.menu-list__entrees {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   gap: 15px;
   padding-bottom: 40px;
 }
-.menu-list_entrees h2 {
+.menu-list__entrees h2 {
   font-size: large;
   margin: 0;
   padding-left: 10px;
 }
-.menu-list_entrees h2 {
+.menu-list__entrees h2 {
   text-decoration-color: #99e2d0;
 }
 
-.menu-list_plats {
+.menu-list__plats {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   gap: 15px;
   padding-bottom: 40px;
 }
-.menu-list_plats h2 {
+.menu-list__plats h2 {
   font-size: large;
   margin: 0;
   padding-left: 10px;
 }
 
-.menu-list_desserts {
+.menu-list__desserts {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   gap: 15px;
 }
-.menu-list_desserts h2 {
+.menu-list__desserts h2 {
   font-size: large;
   margin: 0;
   padding-left: 10px;
 }
 
-.menu-list_card {
+.menu-list__card {
   display: flex;
   align-items: self-end;
   background-color: #f2f2f2;
@@ -776,26 +776,26 @@ input {
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .menu-list_card {
+  .menu-list__card {
     width: 550px;
   }
 }
-.menu-list_card p {
+.menu-list__card p {
   margin-left: auto;
   font-weight: bold;
   padding-right: 50px;
 }
-.menu-list_card:hover .menu-item__check {
+.menu-list__card:hover .menu-item__check {
   margin-right: 0;
   padding: 35px;
 }
 
-.menu-list-card_description {
+.menu-list-card__description {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu-list-card_description h3 {
+.menu-list-card__description h3 {
   margin-bottom: 0;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -804,7 +804,7 @@ input {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu-list-card_description h4 {
+.menu-list-card__description p {
   font-weight: normal;
   margin-top: 0;
   padding-left: 10px;
@@ -856,7 +856,7 @@ input {
   flex-direction: column;
   gap: 10px;
   animation: appear 3s;
-  animation-delay: 2s;
+  animation-delay: 500ms;
 }
 
 .menu-list-item_desserts {
@@ -864,7 +864,7 @@ input {
   flex-direction: column;
   gap: 10px;
   animation: appear 3s;
-  animation-delay: 5s;
+  animation-delay: 800ms;
 }
 
 .menu-item__check {

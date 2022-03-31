@@ -9,8 +9,7 @@
     padding-right: 39px;
 
     h1 {
-        padding-right: 169px;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     i {
@@ -55,7 +54,7 @@
     }
 }
 
-.menu-list_entrees {
+.menu-list__entrees {
     @include card-menu;
     padding-bottom: 40px;
 
@@ -64,16 +63,16 @@
     }
 }
 
-.menu-list_plats {
+.menu-list__plats {
     @include card-menu;
     padding-bottom: 40px;
 }
 
-.menu-list_desserts {
+.menu-list__desserts {
     @include card-menu;
 }
 
-.menu-list_card {
+.menu-list__card {
     @include screen-md {
         width: 550px;
     }
@@ -99,7 +98,7 @@
     }
 }
 
-.menu-list-card_description {
+.menu-list-card__description {
     
     
     overflow: hidden;
@@ -116,7 +115,7 @@
     text-overflow: ellipsis;
     }
 
-    h4 {
+    p {
         font-weight: normal;
         margin-top: 0;
         padding-left: 10px;
@@ -147,10 +146,10 @@
 
 .menu-list-item_plats{
     @include menu-item_title;
-    animation-delay: 2s;
+    animation-delay: 500ms;
 }
 .menu-list-item_desserts{
     @include menu-item_title;
-    animation-delay: 5s;
+    animation-delay: 800ms;
 }
 
