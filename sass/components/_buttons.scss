@@ -53,7 +53,7 @@ input {
 
 .fonctionnement {
     @include screen-md{
-        width: 1100px;
+        width: 900px;
 }
     
     h2 {
@@ -74,14 +74,13 @@ ol{
     @include screen-md{
         display: flex;
         gap: 35px;
-        padding-left: 20px;
 }
 }
     & li {
         &::before {
             content: counter(list);
             counter-increment: list;
-            background-color: #9356DC;
+            background-color: $primaire;
             color: #d3d3d3;
             width: 25px;
             height: 25px;
@@ -98,12 +97,12 @@ ol{
         background-color: #f6f6f6;
         border-radius: 20px;
         padding: 15px;
+        padding-right: 30px;
         box-shadow: 0 0 10px #0000002e;
         list-style-type: none;
         position: relative;
         color: #000000;
         font-weight: bold;
-        width: 350px;
         margin-bottom: 20px;
     }
 
@@ -114,7 +113,7 @@ ol{
 
     i.fas {
 
-        margin-right: 30px;
+        margin-right: 10px;
         padding: 10px;
         color: #808080;
         }
