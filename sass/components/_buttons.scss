@@ -52,28 +52,23 @@ input {
 
 
 .fonctionnement {
-    @include screen-md{
-        width: 900px;
-}
-    
+   
     h2 {
         font-weight: bold;
-        margin-left: 30px;
+        margin-left: 20px;
     }
-
     counter-reset: list;
     margin-left: 20px;
     padding-bottom: 60px;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex-grow: 1;
-    width: 350px;
+
 ol{
     @include screen-md{
         display: flex;
-        gap: 35px;
+        gap: 50px;
+        justify-content: center;
 }
 }
     & li {
@@ -97,22 +92,21 @@ ol{
         background-color: #f6f6f6;
         border-radius: 20px;
         padding: 15px;
-        padding-right: 30px;
+        padding-right: 50px;
         box-shadow: 0 0 10px #0000002e;
         list-style-type: none;
         position: relative;
         color: #000000;
         font-weight: bold;
         margin-bottom: 20px;
+        width: 350px;
     }
 
     & li:hover {
         transform: scale(1.02);
         opacity: 0.9;
     }
-
     i.fas {
-
         margin-right: 10px;
         padding: 10px;
         color: #808080;

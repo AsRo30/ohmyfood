@@ -14,6 +14,13 @@
     }
 }
 
+@keyframes check {
+    0% {transform: rotate(-270deg);
+    }
+    100% { transform: rotate(0);
+    } 
+}
+
 @keyframes appear{
     0%{
         transform: translateY(50%);
@@ -25,10 +32,8 @@
 }
 
 @keyframes disparition{
-    0%{
-        transform: scale(1);
-    }
-    100%{ transform: scale(0);
+
+    to{ transform: scale(0);
     }
 }
 
@@ -41,11 +46,11 @@
     height: 100vh;
     inset: 0;
     z-index: 1;
-    background-color: #ffff;
+    background-image:linear-gradient($primaire,$c-w);
     opacity: 0.9;
-    animation: disparition 1s;
+    animation: disparition 300ms;
     animation-fill-mode: forwards;
-    animation-delay:4s;
+    animation-delay:2s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +58,7 @@
     .fas{
         font-size:60px;
         font-weight: 800;
-        color: $primaire;
+        color: white;
         animation: spin 3s infinite linear;
     }
 }

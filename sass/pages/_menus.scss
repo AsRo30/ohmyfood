@@ -95,11 +95,13 @@
     &:hover .menu-item__check {
         margin-right: 0;
         padding: 35px;
+     i.fas {
+        animation: check 1s ease-in-out;
+    }
     }
 }
 
 .menu-list-card__description {
-    
     
     overflow: hidden;
     white-space: nowrap;
