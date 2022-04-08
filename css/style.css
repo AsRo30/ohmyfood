@@ -440,6 +440,7 @@ input {
   text-align: center;
   padding: 45px;
   font-family: "roboto";
+  background-color: #f6f6f6;
 }
 .explorer button {
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -511,7 +512,7 @@ input {
   color: #000000;
   font-weight: bold;
   margin-bottom: 20px;
-  width: 350px;
+  width: 250px;
 }
 .fonctionnement li::before {
   content: counter(list);
@@ -546,16 +547,14 @@ input {
 /*cards*/
 .restaurants_list {
   padding-bottom: 10px;
+  background-color: #f6f6f6;
+  padding-top: 40px;
 }
 .restaurants_list h2 {
   font-weight: bold;
   margin-left: 42px;
 }
 
-.restaurants-item_list {
-  padding-right: 20px;
-  padding-left: 20px;
-}
 @media (min-width: 768px) {
   .restaurants-item_list {
     display: flex;
@@ -570,27 +569,28 @@ input {
   text-decoration: none;
   color: #000000;
 }
-
-.restaurant-item-list__card {
+.restaurants-item_list .restaurant-item-list__card {
   position: relative;
   background-color: #f2f2f2;
   border-radius: 20px;
   background-size: cover;
   cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 @media (min-width: 768px) {
-  .restaurant-item-list__card {
+  .restaurants-item_list .restaurant-item-list__card {
     flex-basis: 45%;
     width: 350px;
   }
 }
-.restaurant-item-list__card img {
+.restaurants-item_list img {
   width: 100%;
   height: 180px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.restaurant-item-list__card p {
+.restaurants-item_list p {
   padding: 10px;
   margin-bottom: 10px;
   padding-top: 0;
@@ -640,7 +640,7 @@ input {
   background-color: #99e2d0;
   position: absolute;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 30px;
   right: 0;
   font-weight: bold;
   border-radius: 5px;

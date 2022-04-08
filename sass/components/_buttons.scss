@@ -25,6 +25,7 @@ input {
     text-align: center;
     padding: 45px;
     font-family: "roboto";
+    background-color: #f6f6f6;
 
     h1 {
         font-size: 30px;
@@ -52,7 +53,7 @@ input {
 
 
 .fonctionnement {
-   
+  
     h2 {
         font-weight: bold;
         margin-left: 20px;
@@ -99,7 +100,7 @@ ol{
         color: #000000;
         font-weight: bold;
         margin-bottom: 20px;
-        width: 350px;
+        width: 250px;
     }
 
     & li:hover {
