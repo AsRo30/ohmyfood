@@ -602,36 +602,43 @@ input {
 .restaurant-item__description {
   display: flex;
   justify-content: space-between;
-  flex-basis: 50%;
-  font-family: "roboto";
 }
 .restaurant-item__description .far {
-  font-size: 20px;
+  font-size: 26px;
   padding-right: 20px;
   padding-top: 20px;
   position: relative;
 }
 .restaurant-item__description .fas {
-  font-size: 22px;
-  right: 18px;
-  padding-top: 18px;
+  font-size: 25px;
+  right: 1px;
+  padding-top: 20px;
   position: absolute;
-  color: transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
   opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .restaurant-item__description:hover .fas {
   cursor: pointer;
   opacity: 1;
-  transform: scale(1.2);
-  transition: all 1s ease-in-out;
+  animation: remplissage 1500ms forwards;
 }
 .restaurant-item__description h3 {
   margin-left: 10px;
   margin-bottom: 5px;
   font-weight: bold;
   font-size: medium;
+  font-family: "roboto";
+}
+
+.restaurant-item__heart i {
+  padding: 20px;
+}
+
+.restaurant-item-description__title {
+  display: flex;
+  flex-direction: column;
 }
 
 .restaurant-item-list__card span {
@@ -654,26 +661,25 @@ input {
   padding-right: 39px;
 }
 .menu-entete .far {
-  font-size: 20px;
+  font-size: 26px;
   padding-right: 20px;
   padding-top: 20px;
   position: relative;
 }
 .menu-entete .fas {
-  font-size: 22px;
-  right: 18px;
-  padding-top: 18px;
+  font-size: 25px;
+  right: 1px;
+  padding-top: 20px;
   position: absolute;
-  color: transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
   opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menu-entete:hover .fas {
   cursor: pointer;
   opacity: 1;
-  transform: scale(1.2);
-  transition: all 1s ease-in-out;
+  animation: remplissage 1500ms forwards;
 }
 .menu-entete h1 {
   font-size: 25px;
@@ -682,7 +688,10 @@ input {
   padding: 40px;
 }
 .menu-entete .fas {
-  padding-top: 20px;
+  right: 19px;
+}
+.menu-entete .far {
+  padding-right: 19px;
 }
 
 /*cards menu*/
@@ -924,6 +933,15 @@ input {
   font-weight: 800;
   color: white;
   animation: spin 3s infinite linear;
+}
+
+@keyframes remplissage {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

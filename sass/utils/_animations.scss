@@ -62,3 +62,8 @@
         animation: spin 3s infinite linear;
     }
 }
+
+@keyframes remplissage{
+    from { transform: scale(0);}
+    to {transform: scale(1);}
+}

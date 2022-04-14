@@ -24,7 +24,6 @@
              gap: 20px;
              padding-top: 25px;
              width: 100%;
-           
          }
 
          a {
@@ -67,20 +66,26 @@
 
      .restaurant-item__description {
          @include heart;
-
          display: flex;
          justify-content: space-between;
-         flex-basis: 50%;
-         font-family: "roboto";
-
+         
          h3 {
              margin-left: 10px;
              margin-bottom: 5px;
              font-weight: bold;
              font-size: medium;
+             font-family: "roboto";
          }
      }
-
+.restaurant-item__heart{
+    i{
+        padding: 20px;
+    }
+}
+.restaurant-item-description__title{
+    display: flex;
+    flex-direction: column;
+}
      .restaurant-item-list__card span {
          padding: 10px;
          color: #22b822;
@@ -92,3 +97,5 @@
          font-weight: bold;
          border-radius: 5px;
      }
+
+     
